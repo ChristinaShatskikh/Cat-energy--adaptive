@@ -1,0 +1,86 @@
+.questionnaire {
+  padding-bottom: 32px;
+}
+
+.questionnaire__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.questionnaire__personal-data {
+  padding: 24px 0;
+}
+
+.questionnaire__programs {
+  padding: 20px 0;
+  margin-bottom: 26px;
+  border-top: 1px solid $alto-grey;
+  border-bottom: 1px solid $alto-grey;
+}
+
+.questionnaire__list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.questionnaire__item {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.questionnaire__label {
+  margin-right: 12px;
+}
+
+.questionnaire__input {
+  flex-grow: 1;
+}
+
+.questionnaire__contacts {
+  padding-bottom: 24px;
+}
+
+.questionnaire__legend {
+  display: block;
+  padding: 0;
+  margin-bottom: 35px;
+
+  font-size: 24px;
+  line-height: 26px;
+
+  color: $black;
+}
+
+.questionnaire__comment {
+  padding-bottom: 23px;
+}
+
+.questionnaire__textarea {
+  display: block;
+  width: 100%;
+  min-height: 150px;
+}
+
+.questionnaire__extra {
+  padding-bottom: 24px;
+  margin-bottom: 10px;
+}
+
+.questionnaire__button {
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.questionnaire__notification {
+  margin: 0;
+
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  font-family: $font-family-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  color: $basic-dark-grey;
+
+  &:hover {
+    color: $basic-green;
+  }
+
+  &:active {
+    color: $basic-green;
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid $basic-dark-grey;
+    outline-offset: -2px;
+  }
+}
+
+.copyright__text {
+  color: $font-color-base;
+}
+
+.copyright__icon {
+  fill: currentColor;
+}

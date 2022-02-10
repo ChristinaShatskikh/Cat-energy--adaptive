@@ -5,37 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Energy: Главная</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
     <header class="page-header">
-      <div class="content-wrapper">
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <a class="header-logo" aria-label="Логотип сайта Cat Energy">
-              <img src="img/logo-mobile.svg" width="197" height="38" alt="Логотип компании">
-            </a>
-            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          </div>
-          <ul class="site-list">
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--active">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper content-wrapper">
+          <a class="header-logo" aria-label="Логотип сайта Cat Energy">
+            <img src="img/logo-mobile.svg" width="197" height="38" alt="Логотип компании">
+          </a>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
 
       <section class="page-header__promo promo">
         <div class="content-wrapper">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <img class="promo__image" src="img/index-can-mobile@1x.png" alt="Корм для котов Cat Enargy Pro">
+          <img class="promo__image" src="img/content/index-can-mobile@1x.png" alt="Корм для котов Cat Enargy Pro">
           <a class="promo__link button" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -77,21 +76,21 @@
           <div class="example__description">
             <h2 class="example__title">Живой пример</h2>
             <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="example__stats-wrapper stats">
-              <dl class="example__stats-list stats__list">
-                <div class="stats__item">
-                  <dt class="stats__number">
+            <div class="example__stats-wrapper">
+              <dl class="example__stats-list stats-list">
+                <div class="stats-list__item">
+                  <dt class="stats-list__number">
                     5 кг
                   </dt>
-                  <dd class="stats__description">
+                  <dd class="stats-list__description">
                     снижение веса
                   </dd>
                 </div>
-                <div class="stats__item">
-                  <dt class="stats__number">
+                <div class="stats-list__item">
+                  <dt class="stats-list__number">
                     60 дней
                   </dt>
-                  <dd class="stats__description">
+                  <dd class="stats-list__description">
                     затрачено времени
                   </dd>
                 </div>
@@ -149,11 +148,15 @@
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
+            </li>
+            <li class="social__item">
               <a class="social__link" href="https://www.instagram.com" width="23" height="23" aria-label="Мы в Инстаграме">
                 <svg class="social__icon social__icon--insta">
                   <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
+            </li>
+            <li class="social__item">
               <a class="social__link" href="https://www.facebook.com" width="28" height="33" aria-label="Мы в Фейсбуке">
                 <svg class="social__icon social__icon--fb">
                   <use xlink:href="img/sprite.svg#icon-fb"></use>

@@ -1,0 +1,16 @@
+.main-nav__wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 22px;
+}
+
+.main-nav__toggle {
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  color: $special-dark-grey;
+  background-color: transparent;
+}

@@ -5,41 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Energy: Подбор программы</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="content-wrapper">
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <a class="header-logo" aria-label="Логотип сайта Cat Energy">
-              <img src="img/logo-mobile.svg" width="197" height="38" alt="Логотип компании">
-            </a>
-            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          </div>
-          <ul class="site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--active">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper content-wrapper">
+          <a class="header-logo" aria-label="Логотип сайта Cat Energy">
+            <img src="img/logo-mobile.svg" width="197" height="38" alt="Логотип компании">
+          </a>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
       <div class="page-main__header content-wrapper">
         <h1 class="page-main__title">Подбор программы</h1>
-        <p class="page-main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="page-main__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       </div>
 
       <form class="questionnaire" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="content-wrapper">
-          <fieldset class="questionnaire__fieldset questionnaire__personal-data">
+        <fieldset class="questionnaire__fieldset questionnaire__personal-data">
+          <div class="content-wrapper">
             <legend class="visually-hidden">Личные данные вашего кота</legend>
             <ul class="questionnaire__list">
               <li class="questionnaire__item">
@@ -55,73 +54,81 @@
                 <input class="questionnaire__input form-input" type="text" id="catage" name="catage" placeholder="7">
               </li>
             </ul>
-          </fieldset>
+          </div>
+        </fieldset>
 
           <fieldset class="questionnaire__fieldset questionnaire__programs">
-            <legend class="visually-hidden">Виды программ</legend>
-            <ul class="questionnaire__list questionnaire__program-list">
-              <li class="questionnaire__item">
-                <label class="questionnaire__label-radio form-label form-label-radio" for="slimprogram">Похудение</label>
-                <input class="questionnaire__radio visually-hidden" type="radio" id="slimprogram" name="program" checked>
-              </li>
-              <li class="questionnaire__item">
-                <label class="questionnaire__label-radio form-label form-label-radio" for="weightgainprogram">Набор массы</label>
-                <input class="questionnaire__radio visually-hidden" type="radio" id="weightgainprogram" name="program">
-              </li>
-              <li class="questionnaire__item">
-                <label class="questionnaire__label-radio form-label form-label-radio" for="unknownprogram">Не знаю (Нужен ваш совет)</label>
-                <input class="questionnaire__radio visually-hidden" type="radio" id="unknownprogram" name="program">
-              </li>
-            </ul>
+            <div class="content-wrapper">
+              <legend class="visually-hidden">Виды программ</legend>
+              <ul class="questionnaire__list questionnaire__program-list">
+                <li class="questionnaire__item">
+                  <label class="questionnaire__label-radio form-label form-label-radio" for="slimprogram">Похудение</label>
+                  <input class="questionnaire__radio visually-hidden" type="radio" id="slimprogram" name="program" checked>
+                </li>
+                <li class="questionnaire__item">
+                  <label class="questionnaire__label-radio form-label form-label-radio" for="weightgainprogram">Набор массы</label>
+                  <input class="questionnaire__radio visually-hidden" type="radio" id="weightgainprogram" name="program">
+                </li>
+                <li class="questionnaire__item">
+                  <label class="questionnaire__label-radio form-label form-label-radio" for="unknownprogram">Не знаю (Нужен ваш совет)</label>
+                  <input class="questionnaire__radio visually-hidden" type="radio" id="unknownprogram" name="program">
+                </li>
+              </ul>
+            </div>
           </fieldset>
 
           <fieldset class="questionnaire__fieldset questionnaire__contacts">
-            <legend class="questionnaire__legend">Контактные данные (владельца кота)</legend>
-            <ul class="questionnaire__list questionnaire__contacts-list">
-              <li class="questionnaire__item">
-                <label class="questionnaire__label form-label" for="email">E-mail:<sup>*</sup></label>
-                <input class="questionnaire__input questionnaire__input--contacts form-input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
-                <svg class="questionnaire__icon questionnaire__icon--email" width="20" height="14">
-                  <use xlink:href="img/sprite.svg#icon-email"></use>
-                </svg>
-              </li>
-              <li class="questionnaire__item">
-                <label class="questionnaire__label form-label" for="phone">Телефон:<sup>*</sup></label>
-                <input class="questionnaire__input questionnaire__input--contacts form-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-                <svg class="questionnaire__icon questionnaire__icon--phone" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
-              </li>
-            </ul>
+            <div class="content-wrapper">
+              <legend class="questionnaire__legend">Контактные данные (владельца кота)</legend>
+              <ul class="questionnaire__list questionnaire__contacts-list">
+                <li class="questionnaire__item">
+                  <label class="questionnaire__label form-label" for="email">E-mail:<sup>*</sup></label>
+                  <input class="questionnaire__input questionnaire__input--contacts form-input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+                  <svg class="questionnaire__icon questionnaire__icon--email" width="20" height="14">
+                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                  </svg>
+                </li>
+                <li class="questionnaire__item">
+                  <label class="questionnaire__label form-label" for="phone">Телефон:<sup>*</sup></label>
+                  <input class="questionnaire__input questionnaire__input--contacts form-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
           </fieldset>
 
           <div class="questionnaire__fieldset questionnaire__comment">
-            <label class="questionnaire__legend" for="comment">Комментарий</label>
-            <div class="questionnaire__comment-wrapper">
-              <textarea class="questionnaire__textarea form-input" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="content-wrapper">
+              <label class="questionnaire__legend" for="comment">Комментарий</label>
+              <div class="questionnaire__comment-wrapper">
+                <textarea class="questionnaire__textarea form-input" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
             </div>
           </div>
 
           <fieldset class="questionnaire__fieldset questionnaire__extra">
-            <legend class="questionnaire__legend">Дополнительно</legend>
-            <ul class="questionnaire__list questionnaire__extra-list">
-              <li class="questionnaire__item">
-                <label class="questionnaire__label-checkbox form-label form-label-checkbox" for="sweetener">Сахарозаменитель</label>
-                <input class="questionnaire__checkbox visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
-              </li>
-              <li class="questionnaire__item">
-                <label class="questionnaire__label-checkbox form-label form-label-checkbox" for="water">Питьевая вода</label>
-                <input class="questionnaire__checkbox visually-hidden" type="checkbox" id="water" name="water">
-              </li>
-              <li class="questionnaire__item">
-                <label class="questionnaire__label-checkbox form-label form-label-checkbox" for="milk">Молоко</label>
-                <input class="questionnaire__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
-              </li>
-              <li class="questionnaire__item">
-                <label class="questionnaire__label-checkbox form-label form-label-checkbox" for="vitamins">Витамины</label>
-                <input class="questionnaire__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
-              </li>
-            </ul>
+            <div class="content-wrapper">
+              <legend class="questionnaire__legend">Дополнительно</legend>
+              <ul class="questionnaire__list questionnaire__extra-list">
+                <li class="questionnaire__item">
+                  <label class="questionnaire__label-checkbox form-label form-label-checkbox" for="sweetener">Сахарозаменитель</label>
+                  <input class="questionnaire__checkbox visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
+                </li>
+                <li class="questionnaire__item">
+                  <label class="questionnaire__label-checkbox form-label form-label-checkbox" for="water">Питьевая вода</label>
+                  <input class="questionnaire__checkbox visually-hidden" type="checkbox" id="water" name="water">
+                </li>
+                <li class="questionnaire__item">
+                  <label class="questionnaire__label-checkbox form-label form-label-checkbox" for="milk">Молоко</label>
+                  <input class="questionnaire__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
+                </li>
+                <li class="questionnaire__item">
+                  <label class="questionnaire__label-checkbox form-label form-label-checkbox" for="vitamins">Витамины</label>
+                  <input class="questionnaire__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+                </li>
+              </ul>
+            </div>
           </fieldset>
 
           <div class="questionnaire__submit-wrapper">
@@ -157,11 +164,15 @@
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
+            </li>
+            <li class="social__item">
               <a class="social__link" href="https://www.instagram.com" width="23" height="23" aria-label="Мы в Инстаграме">
                 <svg class="social__icon social__icon--insta">
                   <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
+            </li>
+            <li class="social__item">
               <a class="social__link" href="https://www.facebook.com" width="28" height="33" aria-label="Мы в Фейсбуке">
                 <svg class="social__icon social__icon--fb">
                   <use xlink:href="img/sprite.svg#icon-fb"></use>

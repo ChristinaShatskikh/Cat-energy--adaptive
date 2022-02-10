@@ -1,0 +1,17 @@
+.product-parameters-list {
+  font-size: 12px;
+  line-height: 16px;
+
+  color: $basic-dark-grey;
+}
+
+.product-parameters-list__definition {
+  margin: 0;
+}
+.product-parameters-list__item {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 6px;
+}
+

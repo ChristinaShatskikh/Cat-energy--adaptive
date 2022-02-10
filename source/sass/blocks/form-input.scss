@@ -1,0 +1,31 @@
+.form-input {
+  border: 1px solid $mercury-grey;
+  padding: 12px 15px;
+  min-height: 45px;
+
+  font: inherit;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $basic-dark-grey;
+
+  outline: none;
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: $basic-dark-grey;
+    outline: 1px solid $basic-dark-grey;
+  }
+
+  &:focus:invalid {
+    border-color: $coral;
+    outline: 1px solid $coral;
+  }
+
+  &::placeholder {
+    color: inherit;
+    opacity: 1;
+  }
+}

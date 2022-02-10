@@ -1,0 +1,39 @@
+.stats-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.stats-list__item {
+  position: relative;
+  width: 44%;
+  min-height: 24px;
+  padding: 15px 5px;
+
+  border: 1px solid $special-grey;
+  border-radius: 3px;
+  background-color: $iron-grey;
+}
+
+.stats-list__number {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.stats-list__description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(72%);
+  max-width: 77px;
+  margin: 0 auto;
+  font-family: $font-family-secondary;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  background-color: $iron-grey;
+}

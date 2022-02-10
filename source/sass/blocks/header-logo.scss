@@ -1,0 +1,18 @@
+.header-logo {
+  display: block;
+  width: 196px;
+  height: 38px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 2px solid $basic-dark-grey;
+    outline-offset: -2px;
+  }
+}

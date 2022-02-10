@@ -1,0 +1,45 @@
+.promo {
+  min-height: 480px;
+  padding-top: 27px;
+  margin-bottom: 22px;
+
+  color: $white;
+  text-align: center;
+  background-image: url("../../img/index-bg-mobile@1x.jpg"), linear-gradient(180deg, $special-green 63%, $white 63%);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.promo__text {
+  margin: 0 auto;
+  margin-bottom: 29px;
+
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__image {
+  display: block;
+  width: 280px;
+  height: 270px;
+  margin: 0 auto 3px;
+}
+
+.promo__link {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 385px;
+
+  font-size: 14px;
+  line-height: 18px;
+}

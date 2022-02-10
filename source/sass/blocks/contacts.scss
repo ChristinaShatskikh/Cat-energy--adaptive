@@ -1,0 +1,28 @@
+.contacts {
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  background-color: $white;
+
+  &--inner {
+    background-color: $basic-grey;
+  }
+}
+
+.contacts__slogan {
+  margin: 0;
+  width: 140px;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $cod-grey;
+}
+
+.contacts__address {
+  margin: 0;
+  margin-left: auto;
+  width: 140px;
+  font-family: $font-family-secondary;
+  line-height: 20px;
+}
